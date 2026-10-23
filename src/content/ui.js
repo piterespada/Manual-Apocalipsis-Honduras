@@ -1,0 +1,73 @@
+// Textos de la interfaz en ambos idiomas.
+const ui = {
+  es: {
+    appTitle: 'Libro de Supervivencia',
+    appSub: 'Autosuficiencia en Honduras · Libreta de campo offline',
+    welcomeTitle: 'Libro de Supervivencia y Autosuficiencia',
+    welcomeSub: 'Cuaderno de campo para Honduras: siembra, plantas, construcción, agua y herramientas. Funciona sin internet.',
+    chooseLang: 'Elige tu idioma / Choose your language',
+    chapters: 'Capítulos',
+    level: 'Nivel',
+    levelNames: [
+      'Emergencia extrema',
+      'Herramientas básicas',
+      'Semi-avanzado',
+      'Permanencia a largo plazo',
+      'Manual técnico',
+    ],
+    levelHints: [
+      'Lo más simple, con cero recursos.',
+      'Métodos prácticos con herramientas comunes (machete, azadón, cuerda).',
+      'Técnicas con mayor eficiencia.',
+      'Métodos para vivir años en el mismo sitio.',
+      'Ingeniería y criterios completos del tema.',
+    ],
+    markDone: 'Marcar como estudiado',
+    done: 'Estudiado ✓',
+    progress: 'Progreso',
+    dark: 'Modo oscuro',
+    light: 'Modo claro',
+    language: 'Idioma',
+    menu: 'Menú',
+    close: 'Cerrar',
+    offlineReady: 'Disponible sin conexión',
+    disclaimer:
+      'Aviso: este libro es una guía educativa. Las plantas medicinales y comestibles deben identificarse con certeza (idealmente con alguien de la comunidad). Ante duda, no consumas. Con fiebre alta, deshidratación o mordeduras, busca atención médica si es posible. Respeta la ley y las vedas vigentes (ICF) mientras haya orden.',
+  },
+  en: {
+    appTitle: 'Survival Book',
+    appSub: 'Self-reliance in Honduras · Offline field notebook',
+    welcomeTitle: 'Survival & Self-Sufficiency Book',
+    welcomeSub: 'A field notebook for Honduras: planting, plants, building, water and tools. Works without internet.',
+    chooseLang: 'Elige tu idioma / Choose your language',
+    chapters: 'Chapters',
+    level: 'Level',
+    levelNames: [
+      'Extreme emergency',
+      'Basic tools',
+      'Semi-advanced',
+      'Long-term permanence',
+      'Technical manual',
+    ],
+    levelHints: [
+      'The simplest thing, with zero resources.',
+      'Practical methods with common tools (machete, hoe, rope).',
+      'Techniques with higher efficiency.',
+      'Methods to live for years in the same place.',
+      'Full engineering and criteria for the topic.',
+    ],
+    markDone: 'Mark as studied',
+    done: 'Studied ✓',
+    progress: 'Progress',
+    dark: 'Dark mode',
+    light: 'Light mode',
+    language: 'Language',
+    menu: 'Menu',
+    close: 'Close',
+    offlineReady: 'Available offline',
+    disclaimer:
+      'Notice: this book is an educational guide. Edible and medicinal plants must be identified with certainty (ideally with someone from the community). When in doubt, do not eat it. With high fever, dehydration or bites, seek medical care if possible. Follow current laws and closed seasons (ICF) while order holds.',
+  },
+};
+
+export default ui;

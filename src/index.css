@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: #3b2f1e;
+  background: #f3ead3;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html.dark body {
+  color: #e8dcc0;
+  background: #1c1812;
+}
+
+@layer components {
+  /* Hoja de cuaderno con renglones */
+  .page-ruled {
+    background-color: #f7efd9;
+    background-image: linear-gradient(transparent 31px, rgba(166, 140, 90, 0.3) 32px);
+    background-size: 100% 32px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 10px 30px rgba(80, 60, 20, 0.12);
+  }
+  .dark .page-ruled {
+    background-color: #26211a;
+    background-image: linear-gradient(transparent 31px, rgba(200, 175, 120, 0.15) 32px);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+  /* Margen rojo del cuaderno */
+  .page-margin {
+    border-left: 2px solid rgba(164, 73, 43, 0.35);
+  }
+  .dark .page-margin {
+    border-left-color: rgba(220, 120, 90, 0.35);
+  }
+  .ruled-line {
+    line-height: 32px;
+  }
+  .btn-ink {
+    @apply rounded-md border border-paper-line px-3 py-1.5 text-sm transition-colors;
+  }
+  .dark .btn-ink {
+    border-color: #4a402d;
+  }
+}
+
+/* Barra lateral desplazable sin scroll feo */
+.scroll-thin::-webkit-scrollbar {
+  width: 8px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: #d6c49a;
+  border-radius: 8px;
+}
+.dark .scroll-thin::-webkit-scrollbar-thumb {
+  background: #4a402d;
+}
